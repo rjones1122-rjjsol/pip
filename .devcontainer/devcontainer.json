@@ -3,7 +3,18 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.8-bookworm"
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.8-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker": {
+			"version": "latest",
+			"moby": "true",
+			"mobyBuildxVersion": "0.12.0",
+			"dockerDashComposeVersion": "v1",
+			"azureDnsAutoDetection": "true",
+			"dockerDefaultAddressPool": "",
+			"installDockerBuildx": "true"
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
