@@ -35,6 +35,11 @@ Documentation = "https://pip.pypa.io"
 Source = "https://github.com/pypa/pip"
 Changelog = "https://pip.pypa.io/en/stable/news/"
 
+[[tool.poetry.source]]
+name = "rasa-plus"
+url = "https://europe-west3-python.pkg.dev/rasa-releases/rasa-plus-py/simple"
+priority = "supplemental"
+
 [build-system]
 # The lower bound is for <https://github.com/pypa/setuptools/issues/3865>.
 requires = ["setuptools>=67.6.1", "wheel"]
@@ -191,3 +196,5 @@ max-args = 15  # default is 5
 max-branches = 28  # default is 12
 max-returns = 13  # default is 6
 max-statements = 134  # default is 50
+
+
